@@ -4,7 +4,7 @@ const Card = ({ id, name, cost, attack, defense, move, characteristics, img, car
 
     if(clicked){
         return(
-            <div className='tc dib br3 pa3 ma2 grow bw2 shadow-5 w-20' id={id} style={{background:"#d4d2bc",height:"20em",overflowY:"scroll"}} onClick={cardClick}>
+            <div className='tc dib br3 pa3 ma2 grow bw2 shadow-5 w-20-l w-40' id={id} style={{background:"#d4d2bc",height:"20em",overflowY:"scroll"}} onClick={cardClick}>
             <img alt={name} src={process.env.PUBLIC_URL + img} />
             <div>
                 <h3 className='tc'>{name}</h3>
@@ -15,8 +15,8 @@ const Card = ({ id, name, cost, attack, defense, move, characteristics, img, car
     }
     else{
         return (
-            <div className='tc dib br3 pa3 ma2 grow bw2 shadow-5 w-20' id={id} style={{background:"#d4d2bc",height:"20em",overflowY:"hidden"}} onClick={cardClick}>
-                <img alt={name} src={img} />
+            <div className='tc dib br3 pa3 ma2 grow bw2 shadow-5 w-20-l w-40' id={id} style={{background:"#d4d2bc",height:"20em",overflowY:"hidden"}} onClick={cardClick}>
+                <img alt={name} src={process.env.PUBLIC_URL + img} />
                 <div>
                     <h3 className='tc'>{name}</h3>
                     <p><b>Cost: </b>{cost}</p>
