@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Veteran Typewriter';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Veteran Typewriter'), url('../fonts/veterantypewriter.ttf') format('truetype');
+    }
+
+    h1 {
+        font-family: 'Veteran Typewriter';
+        color: #f5e53d;
+        font-weight: 200;
+    }
