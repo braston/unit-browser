@@ -19,7 +19,7 @@ export const units = [
     less unit. Industrial complexes can have at least as many damage markers as they have production ability. In such case, no
     new units can enter the game through that complex until it’s repaired. A damaged minor complex may not be upgraded, so
     any damage on the industrial complex must be repaired at the same time that the upgrade is purchased.`,
-    img: './images/major_complex.JPG',
+    img: '/images/major_complex.JPG',
     clicked: false
   },
   {   
@@ -42,7 +42,7 @@ export const units = [
     less unit. Industrial complexes can have at least as many damage markers as they have production ability. In such case, no
     new units can enter the game through that complex until it’s repaired. A damaged minor complex may not be upgraded, so
     any damage on the industrial complex must be repaired at the same time that the upgrade is purchased.`,
-    img: './images/minor_complex.JPG',
+    img: '/images/minor_complex.JPG',
     clicked: false
   },
   {   
@@ -60,7 +60,7 @@ export const units = [
     adjacent to that territory to participate in the defense of those sea zones. See “Scramble,” page 15, for more details.
     Subject to Damage: An air base is considered to be inoperative if it has 3 or more damage points. It can’t increase air unit
     range or allow air units to scramble.`,
-    img: './images/air_base.JPG',
+    img: '/images/air_base.JPG',
     clicked: false
   },
   {   
@@ -81,7 +81,7 @@ export const units = [
     repaired in the current turn.
     Subject to Damage: A naval base is considered to be inoperative if it has 3 or more damage points. It can’t service sea
     zones, increase sea unit range, or conduct repairs.`,
-    img: './images/naval_base.JPG',
+    img: '/images/naval_base.JPG',
     clicked: false
   },
   {   
@@ -95,7 +95,7 @@ export const units = [
     must be matched one-for-one with a supporting artillery unit. If your infantry outnumber your artillery, the excess infantry
     units still have an attack of 1. For example, if you attack with 2 artillery and 5 infantry, 2 of your infantry have an attack of 2
     and the rest have an attack of 1. Infantry are not supported by artillery on defense.`,
-    img: './images/infantry.JPG',
+    img: '/images/infantry.JPG',
     clicked: false
   },
   {   
@@ -108,7 +108,7 @@ export const units = [
     characteristics: `Supports Infantry and Mechanized Infantry: When an infantry or mechanized infantry attacks along with an artillery, its
     attack increases to 2. Each infantry and/or mechanized infantry must be matched one-for-one with a supporting artillery unit.
     Artillery doesn’t support infantry or mechanized infantry on defense.`,
-    img: './images/artillery.JPG',
+    img: '/images/artillery.JPG',
     clicked: false
   },
   {   
@@ -126,7 +126,7 @@ export const units = [
     outnumber your artillery, the excess mechanized infantry units still have an attack of 1. For example, if you attack with
     2 artillery and 5 mechanized infantry, 2 of your mechanized infantry have an attack of 2 and the rest have an attack of 1.
     Mechanized infantry are not supported by artillery on defense.`,
-    img: './images/mechanized.JPG',
+    img: '/images/mechanized.JPG',
     clicked: false
   },
   {   
@@ -145,7 +145,7 @@ export const units = [
     • Combining a tank and a tactical bomber increases the tactical bomber’s attack number from 3 to 4 (see “Tactical Bombers,”
     page 29).
     • Each mechanized infantry unit combined with a tank can blitz along with it (see “Mechanized Infantry,” page 26).`,
-    img: './images/tank.JPG',
+    img: '/images/tank.JPG',
     clicked: false
   },
   {   
@@ -172,7 +172,7 @@ export const units = [
     occurs immediately before normal combat occurs in the territory containing the AAA unit. AAA units do not defend facilities
     against strategic or tactical bombing. Facilities have their own built-in air defenses (see “Industrial Complexes and Bases
     (Facilities),” page 24).`,
-    img: './images/aaa.JPG',
+    img: '/images/aaa.JPG',
     clicked: false
   },
   {   
@@ -187,7 +187,7 @@ export const units = [
     or all defending fighters based in a territory that is about to be bombed can participate in the defense of the industrial complex
     and/or bases that are targeted. Escort fighters (those accompanying the bombers) can escort and protect the bombers, and they
     can originate from any territory or sea zone, range permitting. (See “Strategic and Tactical Bombing Raids,” page 16.)`,
-    img: './images/fighter.JPG',
+    img: '/images/fighter.JPG',
     clicked: false
   },
   {   
@@ -206,7 +206,7 @@ export const units = [
     Tactical Bombing Raid: A tactical bomber can either participate in normal combat or make a direct attack against an enemy
     air or naval base. Such an attack on a facility is a tactical bombing raid (see “Strategic and Tactical Bombing Raids,” page
     16).`,
-    img: './images/tac_bomber.JPG',
+    img: '/images/tac_bomber.JPG',
     clicked: false
   },
   {   
@@ -219,7 +219,7 @@ export const units = [
     characteristics: `Strategic Bombing Raid: A strategic bomber can either participate in normal combat, or make a direct attack against an enemy
     industrial complex, air base, or naval base. Such an attack on a facility is a strategic bombing raid (see “Strategic and Tactical
     Bombing Raids,” page 16).`,
-    img: './images/strat_bomber.JPG',
+    img: '/images/strat_bomber.JPG',
     clicked: false
   },
   {   
@@ -235,7 +235,7 @@ export const units = [
     operative friendly naval base (see “Naval Bases,” page 25).
     Offshore Bombardment: Your battleships (along with your cruisers) can conduct offshore bombardment during an
     amphibious assault (see “Amphibious Assaults—Step 2. Battleship and Cruiser Bombardment,” page 17).`,
-    img: './images/battleship.JPG',
+    img: '/images/battleship.JPG',
     clicked: false
   },
   {   
@@ -276,7 +276,7 @@ export const units = [
     makes any noncombat movements.
     When a damaged carrier is attacked, any air units on board are considered cargo and can’t defend. If the carrier is lost, they
     are lost along with it.`,
-    img: './images/carrier.JPG',
+    img: '/images/carrier.JPG',
     clicked: false
   },
   {   
@@ -288,7 +288,7 @@ export const units = [
     move: '2',
     characteristics: `Offshore Bombardment: Your cruisers (along with your battleships) can conduct offshore bombardment during an amphibious
     assault (see “Amphibious Assaults—Step 2. Battleship and Cruiser Bombardment,” page 17).`,
-    img: './images/cruiser.JPG',
+    img: '/images/cruiser.JPG',
     clicked: false
   },
   {   
@@ -306,7 +306,7 @@ export const units = [
     If a destroyer is in a battle, it cancels the following unit characteristics of all enemy submarines in that battle: Surprise Strike,
     Submersible, and Can’t Be Hit by Air Units. Note that destroyers belonging to a power friendly to the attacker that happen to be in the
     same sea zone as the battle don’t actually participate in it, therefore they don’t cancel any of these abilities of defending submarines.`,
-    img: './images/destroyer.JPG',
+    img: '/images/destroyer.JPG',
     clicked: false
   },
   {   
@@ -339,7 +339,7 @@ export const units = [
     Can’t Hit Air Units: When attacking or defending, submarines can’t hit air units.
     Can’t Be Hit by Air Units: When attacking or defending, hits scored by air units can’t be assigned to submarines unless there
     is a destroyer that is friendly to the air units in the battle.`,
-    img: './images/sub.JPG',
+    img: '/images/sub.JPG',
     clicked: false
   },
   {   
@@ -385,7 +385,7 @@ export const units = [
     time a transport can offload into a hostile territory.
     During an amphibious assault, a transport must either offload al units that were loaded during the Combat Move phase or retreat during
     sea combat. It can also offload any number of units owned by the transport’s power that were already on board at the start of the turn.`,
-    img: './images/transport.JPG',
+    img: '/images/transport.JPG',
     clicked: false
   },
 ];
