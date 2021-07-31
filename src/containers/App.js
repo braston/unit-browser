@@ -64,7 +64,7 @@ class App extends Component {
                     < Button name="Utility" buttonClick={this.onCategorySelect} />
                     < Scroll>
                         < ErrorBoundry >
-                            < CardList cardClick={this.onCardClick} units={filteredunits} />
+                            < CardList cardClick={this.onCardClick} units={filteredunits}/>
                         </ErrorBoundry>
                     </Scroll>
                 </div>    
