@@ -21,7 +21,7 @@ export const units = [
     any damage on the industrial complex must be repaired at the same time that the upgrade is purchased.`,
     img: '/images/major_complex.JPG',
     clicked: false,
-    type: 'Utility'
+    type: 'Utility, All'
   },
   {   
     id: 2,
@@ -45,7 +45,7 @@ export const units = [
     any damage on the industrial complex must be repaired at the same time that the upgrade is purchased.`,
     img: '/images/minor_complex.JPG',
     clicked: false,
-    type: 'Utility'
+    type: 'Utility, All'
   },
   {   
     id: 3,
@@ -64,7 +64,7 @@ export const units = [
     range or allow air units to scramble.`,
     img: '/images/air_base.JPG',
     clicked: false,
-    type: 'Air, Utility'
+    type: 'Air, Utility, All'
   },
   {   
     id: 4,
@@ -86,7 +86,7 @@ export const units = [
     zones, increase sea unit range, or conduct repairs.`,
     img: '/images/naval_base.JPG',
     clicked: false,
-    type: 'Sea, Utility'
+    type: 'Sea, Utility, All'
   },
   {   
     id: 5,
@@ -101,7 +101,7 @@ export const units = [
     and the rest have an attack of 1. Infantry are not supported by artillery on defense.`,
     img: '/images/infantry.JPG',
     clicked: false,
-    type: 'Land'
+    type: 'Land, All'
   },
   {   
     id: 6,
@@ -115,7 +115,7 @@ export const units = [
     Artillery doesn’t support infantry or mechanized infantry on defense.`,
     img: '/images/artillery.JPG',
     clicked: false,
-    type: 'Land'
+    type: 'Land, All'
   },
   {   
     id: 7,
@@ -134,7 +134,7 @@ export const units = [
     Mechanized infantry are not supported by artillery on defense.`,
     img: '/images/mechanized.JPG',
     clicked: false,
-    type: 'Land'
+    type: 'Land, All'
   },
   {   
     id: 8,
@@ -154,7 +154,7 @@ export const units = [
     • Each mechanized infantry unit combined with a tank can blitz along with it (see “Mechanized Infantry,” page 26).`,
     img: '/images/tank.JPG',
     clicked: false,
-    type: 'Land'
+    type: 'Land, All'
   },
   {   
     id: 9,
@@ -182,7 +182,7 @@ export const units = [
     (Facilities),” page 24).`,
     img: '/images/aaa.JPG',
     clicked: false,
-    type: 'Air, Land'
+    type: 'Air, Land, All'
   },
   {   
     id: 10,
@@ -198,7 +198,7 @@ export const units = [
     can originate from any territory or sea zone, range permitting. (See “Strategic and Tactical Bombing Raids,” page 16.)`,
     img: '/images/fighter.JPG',
     clicked: false,
-    type: 'Air'
+    type: 'Air, All'
   },
   {   
     id: 11,
@@ -218,7 +218,7 @@ export const units = [
     16).`,
     img: '/images/tac_bomber.JPG',
     clicked: false,
-    type: 'Air'
+    type: 'Air, All'
   },
   {   
     id: 12,
@@ -232,7 +232,7 @@ export const units = [
     Bombing Raids,” page 16).`,
     img: '/images/strat_bomber.JPG',
     clicked: false,
-    type: 'Air'
+    type: 'Air, All'
   },
   {   
     id: 13,
@@ -249,7 +249,7 @@ export const units = [
     amphibious assault (see “Amphibious Assaults—Step 2. Battleship and Cruiser Bombardment,” page 17).`,
     img: '/images/battleship.JPG',
     clicked: false,
-    type: 'Sea'
+    type: 'Sea, All'
   },
   {   
     id: 14,
@@ -291,7 +291,7 @@ export const units = [
     are lost along with it.`,
     img: '/images/carrier.JPG',
     clicked: false,
-    type: 'Sea'
+    type: 'Sea, All'
   },
   {   
     id: 15,
@@ -304,7 +304,7 @@ export const units = [
     assault (see “Amphibious Assaults—Step 2. Battleship and Cruiser Bombardment,” page 17).`,
     img: '/images/cruiser.JPG',
     clicked: false,
-    type: 'Sea'
+    type: 'Sea, All'
   },
   {   
     id: 16,
@@ -323,7 +323,7 @@ export const units = [
     same sea zone as the battle don’t actually participate in it, therefore they don’t cancel any of these abilities of defending submarines.`,
     img: '/images/destroyer.JPG',
     clicked: false,
-    type: 'Sea'
+    type: 'Sea, All'
   },
   {   
     id: 17,
@@ -357,7 +357,7 @@ export const units = [
     is a destroyer that is friendly to the air units in the battle.`,
     img: '/images/sub.JPG',
     clicked: false,
-    type: 'Sea'
+    type: 'Sea, All'
   },
   {   
     id: 18,
@@ -404,6 +404,6 @@ export const units = [
     sea combat. It can also offload any number of units owned by the transport’s power that were already on board at the start of the turn.`,
     img: '/images/transport.JPG',
     clicked: false,
-    type: 'Sea'
+    type: 'Sea, All'
   },
 ];

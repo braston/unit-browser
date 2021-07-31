@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'tachyons';
-//import SearchBox from '../components/SearchBox';
 import CardList from '../components/CardList';
 import './App.css';
 import Scroll from '../components/Scroll';
@@ -12,9 +11,8 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            units: [],
-            searchField: '',    
-            categoryField: '', 
+            units: [],   
+            categoryField: 'All', 
         }
     }
 
@@ -22,20 +20,12 @@ class App extends Component {
             this.setState({units: units});
     }
 
-    onSearchChange = (event) => {
-        this.setState ({
-           searchField: event.target.value,
-        });
-    }
-
     onCardClick = (event) => {
         //Use currentTarget instead of target-
         //target is what was clicked, currentTarget is what the event was bound to
-        console.log(event.currentTarget.id);
         let modId = event.currentTarget.id -1;
         let updatedUnits = this.state.units;
         let updatedUnit = updatedUnits[modId];
-        console.log(updatedUnit);
         updatedUnit.clicked = !updatedUnit.clicked;
         updatedUnits[modId] = updatedUnit;
         this.setState({
@@ -44,12 +34,7 @@ class App extends Component {
     }
 
     onCategorySelect = (event) => {
-        console.log('Button Selected - Category: ');
-        console.log(event.currentTarget.id);
         let query = event.currentTarget.id;
-        if(query === 'All'){
-            query = '';
-        }
         this.setState ({
             categoryField: query,
          });
@@ -65,12 +50,11 @@ class App extends Component {
             <h1>Loading...</h1> : (
                 <div className='tc'>
                     <h1 className="f1-l f4 ma0">Axis & Allies Units</h1>
-                    {/* < SearchBox searchChange={this.onSearchChange}/> */}
-                    < Button name="All" buttonClick={this.onCategorySelect} />
-                    < Button name="Land" buttonClick={this.onCategorySelect} />
-                    < Button name="Air" buttonClick={this.onCategorySelect} />
-                    < Button name="Sea" buttonClick={this.onCategorySelect} />
-                    < Button name="Utility" buttonClick={this.onCategorySelect} />
+                    < Button name="All" buttonClick={this.onCategorySelect} isSelected={this.state.categoryField} />
+                    < Button name="Land" buttonClick={this.onCategorySelect} isSelected={this.state.categoryField} />
+                    < Button name="Air" buttonClick={this.onCategorySelect} isSelected={this.state.categoryField} />
+                    < Button name="Sea" buttonClick={this.onCategorySelect} isSelected={this.state.categoryField} />
+                    < Button name="Utility" buttonClick={this.onCategorySelect} isSelected={this.state.categoryField} />
                     < Scroll>
                         < ErrorBoundry >
                             < CardList cardClick={this.onCardClick} units={filteredunits}/>
