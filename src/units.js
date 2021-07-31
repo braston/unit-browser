@@ -20,7 +20,8 @@ export const units = [
     new units can enter the game through that complex until it’s repaired. A damaged minor complex may not be upgraded, so
     any damage on the industrial complex must be repaired at the same time that the upgrade is purchased.`,
     img: '/images/major_complex.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Utility'
   },
   {   
     id: 2,
@@ -43,7 +44,8 @@ export const units = [
     new units can enter the game through that complex until it’s repaired. A damaged minor complex may not be upgraded, so
     any damage on the industrial complex must be repaired at the same time that the upgrade is purchased.`,
     img: '/images/minor_complex.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Utility'
   },
   {   
     id: 3,
@@ -61,7 +63,8 @@ export const units = [
     Subject to Damage: An air base is considered to be inoperative if it has 3 or more damage points. It can’t increase air unit
     range or allow air units to scramble.`,
     img: '/images/air_base.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Air, Utility'
   },
   {   
     id: 4,
@@ -82,7 +85,8 @@ export const units = [
     Subject to Damage: A naval base is considered to be inoperative if it has 3 or more damage points. It can’t service sea
     zones, increase sea unit range, or conduct repairs.`,
     img: '/images/naval_base.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea, Utility'
   },
   {   
     id: 5,
@@ -96,7 +100,8 @@ export const units = [
     units still have an attack of 1. For example, if you attack with 2 artillery and 5 infantry, 2 of your infantry have an attack of 2
     and the rest have an attack of 1. Infantry are not supported by artillery on defense.`,
     img: '/images/infantry.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Land'
   },
   {   
     id: 6,
@@ -109,7 +114,8 @@ export const units = [
     attack increases to 2. Each infantry and/or mechanized infantry must be matched one-for-one with a supporting artillery unit.
     Artillery doesn’t support infantry or mechanized infantry on defense.`,
     img: '/images/artillery.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Land'
   },
   {   
     id: 7,
@@ -127,7 +133,8 @@ export const units = [
     2 artillery and 5 mechanized infantry, 2 of your mechanized infantry have an attack of 2 and the rest have an attack of 1.
     Mechanized infantry are not supported by artillery on defense.`,
     img: '/images/mechanized.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Land'
   },
   {   
     id: 8,
@@ -146,7 +153,8 @@ export const units = [
     page 29).
     • Each mechanized infantry unit combined with a tank can blitz along with it (see “Mechanized Infantry,” page 26).`,
     img: '/images/tank.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Land'
   },
   {   
     id: 9,
@@ -173,7 +181,8 @@ export const units = [
     against strategic or tactical bombing. Facilities have their own built-in air defenses (see “Industrial Complexes and Bases
     (Facilities),” page 24).`,
     img: '/images/aaa.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Air, Land'
   },
   {   
     id: 10,
@@ -188,7 +197,8 @@ export const units = [
     and/or bases that are targeted. Escort fighters (those accompanying the bombers) can escort and protect the bombers, and they
     can originate from any territory or sea zone, range permitting. (See “Strategic and Tactical Bombing Raids,” page 16.)`,
     img: '/images/fighter.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Air'
   },
   {   
     id: 11,
@@ -207,7 +217,8 @@ export const units = [
     air or naval base. Such an attack on a facility is a tactical bombing raid (see “Strategic and Tactical Bombing Raids,” page
     16).`,
     img: '/images/tac_bomber.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Air'
   },
   {   
     id: 12,
@@ -220,7 +231,8 @@ export const units = [
     industrial complex, air base, or naval base. Such an attack on a facility is a strategic bombing raid (see “Strategic and Tactical
     Bombing Raids,” page 16).`,
     img: '/images/strat_bomber.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Air'
   },
   {   
     id: 13,
@@ -236,7 +248,8 @@ export const units = [
     Offshore Bombardment: Your battleships (along with your cruisers) can conduct offshore bombardment during an
     amphibious assault (see “Amphibious Assaults—Step 2. Battleship and Cruiser Bombardment,” page 17).`,
     img: '/images/battleship.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea'
   },
   {   
     id: 14,
@@ -277,7 +290,8 @@ export const units = [
     When a damaged carrier is attacked, any air units on board are considered cargo and can’t defend. If the carrier is lost, they
     are lost along with it.`,
     img: '/images/carrier.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea'
   },
   {   
     id: 15,
@@ -289,7 +303,8 @@ export const units = [
     characteristics: `Offshore Bombardment: Your cruisers (along with your battleships) can conduct offshore bombardment during an amphibious
     assault (see “Amphibious Assaults—Step 2. Battleship and Cruiser Bombardment,” page 17).`,
     img: '/images/cruiser.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea'
   },
   {   
     id: 16,
@@ -307,7 +322,8 @@ export const units = [
     Submersible, and Can’t Be Hit by Air Units. Note that destroyers belonging to a power friendly to the attacker that happen to be in the
     same sea zone as the battle don’t actually participate in it, therefore they don’t cancel any of these abilities of defending submarines.`,
     img: '/images/destroyer.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea'
   },
   {   
     id: 17,
@@ -340,7 +356,8 @@ export const units = [
     Can’t Be Hit by Air Units: When attacking or defending, hits scored by air units can’t be assigned to submarines unless there
     is a destroyer that is friendly to the air units in the battle.`,
     img: '/images/sub.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea'
   },
   {   
     id: 18,
@@ -386,6 +403,7 @@ export const units = [
     During an amphibious assault, a transport must either offload al units that were loaded during the Combat Move phase or retreat during
     sea combat. It can also offload any number of units owned by the transport’s power that were already on board at the start of the turn.`,
     img: '/images/transport.JPG',
-    clicked: false
+    clicked: false,
+    type: 'Sea'
   },
 ];

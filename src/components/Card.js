@@ -19,7 +19,7 @@ const Card = ({ id, name, cost, attack, defense, move, characteristics, img, car
                 <img  className='tc' alt={name} src={process.env.PUBLIC_URL + img} />
                 <div>
                     <h3 className='tc'>{name}</h3>
-                    <div className='tl f5 pa0 ma0'>
+                    <div className='tc f5 pa0 ma0'>
                         <p><b>Cost: </b>{cost}</p>
                         <p><b>Attack: </b>{attack}</p>
                         <p><b>Defense: </b>{defense}</p>

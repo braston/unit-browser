@@ -14,6 +14,7 @@ class App extends Component {
         this.state = {
             units: [],
             searchField: '',    
+            categoryField: '', 
         }
     }
 
@@ -45,12 +46,19 @@ class App extends Component {
     onCategorySelect = (event) => {
         console.log('Button Selected - Category: ');
         console.log(event.currentTarget.id);
+        let query = event.currentTarget.id;
+        if(query === 'All'){
+            query = '';
+        }
+        this.setState ({
+            categoryField: query,
+         });
     }
 
     render() {
-        const { units, searchField } = this.state;
-        const filteredunits = units.filter(robot => {
-            return robot.name.toLowerCase().includes(searchField.toLowerCase());
+        const { units, categoryField } = this.state;
+        const filteredunits = units.filter(unit => {
+            return unit.type.toLowerCase().includes(categoryField.toLowerCase());
         })
 
       return !units.length ?
@@ -58,6 +66,7 @@ class App extends Component {
                 <div className='tc'>
                     <h1 className="f1-l f4 ma0">Axis & Allies Units</h1>
                     {/* < SearchBox searchChange={this.onSearchChange}/> */}
+                    < Button name="All" buttonClick={this.onCategorySelect} />
                     < Button name="Land" buttonClick={this.onCategorySelect} />
                     < Button name="Air" buttonClick={this.onCategorySelect} />
                     < Button name="Sea" buttonClick={this.onCategorySelect} />
